@@ -34,3 +34,8 @@
     - 执行 npm run test --testMatch='**/**/[插件名].apec.ts' 运行单个插件的单元测试
     - 安装 npm i -D @vue/test-utils 插件，dom挂载对象插件
     - npm i babel-jest @babel/preset-env -D 用于解析 es6 或 TS语法
+
+## 搭建 cli 快速创建模板
+
+- 安装 nodejs 插件 npm i -D commander inquirer fs-extra kolorist esbuild
+- 根目录下 创建 appCom-cli
