@@ -19,3 +19,7 @@
 ## 在根目录下创建 dosc 文件夹， 配置 vitepress
 
     - 安装 vitepress  npm i vitepress -D
+    - 在 docs 目录下创建配置文件 vite.config.ts，配置和项目vite.config.ts 相同，但仅解析 tsx语法
+    - 在package.json 下增加启动命令
+    - 在 docs 下创建 .vitepress文件夹
+    - 在 docs/.vitepress 下 创建 配置文件 config.ts，配置文档左侧菜单
