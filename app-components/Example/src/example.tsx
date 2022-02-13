@@ -14,8 +14,8 @@ export default defineComponent({
         return () =>{
             console.log(data, data.value)
             return (
-                <div class="vueApp-example">
-                    { data.value.map((item: ExampleItem) => (<span class="item">{item.label}<br/></span>)) }
+                <div className="vueApp-example">
+                    { data.value.map((item: ExampleItem) => (<span className="item">{item.label}<br/></span>)) }
                 </div>
             )
         }

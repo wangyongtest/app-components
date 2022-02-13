@@ -23,3 +23,14 @@
     - 在package.json 下增加启动命令
     - 在 docs 下创建 .vitepress文件夹
     - 在 docs/.vitepress 下 创建 配置文件 config.ts，配置文档左侧菜单
+    - 安装 vitepress-theme-demoblock 文档样式 插件
+
+## 安装 开发组件的测试用例 [位置单个插件目录下]
+
+    - 安装插件 npm i -D jest @types/jest
+    - 在 app-components/example下创建__test__测试用例文件夹
+    - 创建 example.specx.ts 测试用例文件
+    - 添加测试命令  "test": "jest"
+    - 执行 npm run test --testMatch='**/**/[插件名].apec.ts' 运行单个插件的单元测试
+    - 安装 npm i -D @vue/test-utils 插件，dom挂载对象插件
+    - npm i babel-jest @babel/preset-env -D 用于解析 es6 或 TS语法
