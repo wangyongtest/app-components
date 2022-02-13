@@ -39,3 +39,5 @@
 
 - 安装 nodejs 插件 npm i -D commander inquirer fs-extra kolorist esbuild
 - 根目录下 创建 appCom-cli
+
+## 按需加载 配置

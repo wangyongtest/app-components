@@ -1,0 +1,51 @@
+{
+  "name": "app",
+  "private": true,
+  "version": "0.0.0",
+  "main": "appCom.umd.js",
+  "module": "appCom.es.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:serve": "vitepress serve docs",
+    "register:components": "vitepress-rc",
+    "test": "jest",
+    "build:components": "node ./app-com-cli/commands/build.js",
+    "build:lib": "yarn build:components && cp package.json build && cp README.md build"
+  },
+  "dependencies": {
+    "vue": "^3.2.25"
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.16.11",
+    "@babel/preset-typescript": "^7.16.7",
+    "@types/jest": "^27.4.0",
+    "@vitejs/plugin-vue": "^2.2.0",
+    "@vitejs/plugin-vue-jsx": "^1.3.5",
+    "@vue/babel-plugin-jsx": "^1.1.1",
+    "@vue/test-utils": "^2.0.0-rc.17",
+    "babel-jest": "^27.5.1",
+    "commander": "^9.0.0",
+    "esbuild": "^0.14.21",
+    "fs-extra": "^10.0.0",
+    "inquirer": "^8.2.0",
+    "jest": "^27.5.1",
+    "kolorist": "^1.5.1",
+    "lerna": "^4.0.0",
+    "sass": "^1.49.7",
+    "typescript": "^4.5.4",
+    "vite": "^2.8.0",
+    "vitepress": "^0.22.0",
+    "vitepress-theme-demoblock": "^1.4.2",
+    "vue-tsc": "^0.29.8"
+  },
+  "workspaces":{
+    "packages": [
+      "packages/*"
+    ]
+  },
+  "license": "MIT"
+}
